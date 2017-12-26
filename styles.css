@@ -47,7 +47,11 @@ img:hover {
 
 /* header */
 header {
+<<<<<<< HEAD
   background: #5a5a5a;
+=======
+  background: #555;
+>>>>>>> 483a6b042251567e0df39522e3767f624e3af72a
   color: #fcfcfc;
   padding: 15px;
 }
