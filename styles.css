@@ -1,164 +1,9 @@
 @charset "utf-8";
 
-
-/* ========================================
-    レイアウト用
-========================================= */
-
-/* common */
-
-body{
-  /* font-size: 14px; */
-  font-family:'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background: #f8f8f8;
-  
-}
-
-/* h1 {
-  font-size: 16px;
-} */
-
-p {
-  line-height: 2;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-section {
-  padding: 20px 0;
-}
-
-section h2,
-section h3 {
-  text-align: center;
-  margin: 0 0 10px;
-}
-
-h2::after {
-  display: block;
-  font-size: 18px;
-  color: #888;
-  padding-top: 10px;
-}
-
-img:hover {
-  opacity: 0.7;
-}
-
-/* img.shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-} */
-
-/* header */
-header {
-  background: #5a5a5a;
-  color: #fcfcfc;
-  padding: 5px;
-  margin-bottom: 20px;
-}
-
-/* section */
-
-/* section h2:after {
-  content: '- Works -';
-} */
-
-
-section .container {
-  border-bottom: 1px dotted #555555;
-}
-
-section .container:last-child {
-  border-bottom: none;
-}
-
-section .item{
-  text-align: center;
-  padding: 10px 5px;;
-}
-
-section .item img {
-  width: 100%;
-  height: auto;
-  border: solid 2px #ccc;
-
-}
-
-section .item {
-  margin-bottom: 10px;
-}
-
-section .item:last-child {
-  margin-bottom: 0px;
-}
-
-.item p {
-  text-align: center;
-  /* margin-bottom: 50px; */
-}
-
-/* footer */
-
-footer {
-  background: #5a5a5a;
-  text-align: center;
-  color: #fcfcfc;
-  padding: 15px;
-}
-
-/* medium */
-
-@media (min-width: 570px) {
-
-  section .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .site .item {
-    width: 45%;
-    float: left;
-  }
-
-  .clear {
-    clear: both;
-  }
-
-  .apps .item {
-    width: 45%;
-    float: left;
-  }
-
-  section .item img {
-    width: 100%;
-    height: auto;
-  }
-
-  section p {
-    margin-bottom: 0px;
-  }
-}
-
-/* large */
-
-@media (min-width: 820px) {
-
-  .container {
-    width: 820px;
-  }
-
-}@charset "utf-8";
-
 /* ========================================
     リセットcss
 ========================================= */
-/* html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -192,14 +37,14 @@ table{border-collapse: collapse; border-spacing:0;}
 caption, th{text-align: left;}
 a:focus {outline:none;}
 
-/* micro clearfix 
+/* micro clearfix */
 .cf:before,
 .cf:after {
     content: " ";
     display: table;
 }
 .cf:after {clear: both;}
-.cf {*zoom: 1;} */
+.cf {*zoom: 1;} 
 
 
 /* ========================================
@@ -209,20 +54,26 @@ a:focus {outline:none;}
 /* common */
 
 body{
-  /* font-size: 14px; */
   font-family:'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-size: 16px;
+  color: #555555;
   margin: 0;
   padding: 0;
-  color: #333;
   background: #f8f8f8;
   
 }
 
-/* h1 {
-  font-size: 16px;
-} */
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
 
 p {
+  font-size: 16px;
   line-height: 2;
 }
 
@@ -256,20 +107,28 @@ img:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 } */
 
-/* header */
+/*============
+  header 
+============*/
 header {
-  background: #5a5a5a;
+  background: #a1a1a1;
   color: #fcfcfc;
   padding: 5px;
   margin-bottom: 20px;
 }
 
-/* section */
+
+/*============
+  section
+============*/
 
 /* section h2:after {
   content: '- Works -';
 } */
 
+#sites .container {
+  border-bottom: 1px solid #ccc;
+}
 
 section .item{
   text-align: center;
@@ -280,7 +139,6 @@ section .item img {
   width: 100%;
   height: auto;
   border: solid 2px #ccc;
-
 }
 
 section .item {
@@ -296,16 +154,40 @@ section .item:last-child {
   /* margin-bottom: 50px; */
 }
 
-/* footer */
+/*=========== 
+  footer 
+============*/
 
 footer {
-  background: #5a5a5a;
+  background: #a1a1a1;
   text-align: center;
   color: #fcfcfc;
   padding: 15px;
 }
 
-/* medium */
+#footer_inner {
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+p#pagetop a {
+  width: 78px;
+  height: 20px;
+  background-color: #a1a1a1;
+  text-align: center;
+  color: white;
+  display: block;
+  text-decoration: none;
+  line-height: 20px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+/*===========
+  medium 
+===========*/
 
 @media (min-width: 570px) {
 
@@ -314,7 +196,7 @@ footer {
     justify-content: space-between;
   }
 
-  .site .item {
+  #sites .item {
     width: 45%;
     float: left;
   }
@@ -323,7 +205,7 @@ footer {
     clear: both;
   }
 
-  .apps .item {
+  #apps .item {
     width: 45%;
     float: left;
   }
@@ -338,7 +220,9 @@ footer {
   }
 }
 
-/* large */
+/*===========
+  large 
+============*/
 
 @media (min-width: 820px) {
 
